@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title></title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class=" p-5">
+
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/logo.png" class="nav-img " loading="lazy">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">loucura</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">fotinha</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">zapzap</a></li>
+            </ul>
+
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary rotacao-botao fw-bold">Acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista ">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold">A +</button>
+
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold">A -</button>
+
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="container my-5">
+
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas ao Luciano</h1>
+                    <img src="img/logo-2.png" class="mb-3" width="563" height="278" loading="lazy">
+                    <a href="#tropicalia" class="btn btn-primary btn-lg botao-inicio fw-semibold">venha Quero
+                        conhecer!</a>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Luciano_Camargo_no_A_Elimina%C3%A7%C3%A3o_em_2021.png"
+                    alt=""
+                    title="Os mutantes - CC0 Domínio Público / Acervo Arquivo Nacional" class="img-fluid img-inicio">
+
+            </div>
+        </section>
+
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+            <div class="container d-flex align-items-center ">
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="data:image/jpeg;base64,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" class="rounded-pill" alt="" width="273" height="331" loading="lazy">
+                </div>
+                <div class="col-5">
+                    <h2>O que foi o Luciano</h2>
+                    <p class="p-2">o Luciano, também conhecido como Luciano, é um professor de orientaçao de estudos e redação e leitura
+                      ele é sempre empenhado a fazer com que seus alunos façam a lição e as redações e sempre esta fazendo leituras de livro como Olhos Da agua e dentre outros
+                      é um professor de naturalidade brasileira e sempre esta a demosntrar honestidade diversão e consegue passar um pouco conteudo, fazendo um bom proveito das suas quatro aulas
+                      sempre esta alegre e tentando animar seus alunos trazendo um ótimo desempenho como professor.
+                       
+                        
+                       
+                        </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2 class="text-center pt-5">vejam Luciano</h2>
+            <div class="container p-3 mt-3 fundo-galeria ">
+
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/lossy-page1-640px-Jorge_Ben_e_o_Trio_Mocotó_no_Teatro_da_Lagoa,_1971.tif.jpg"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/lossy-page1-640px-Os_Mutantes_2.tif.jpg" class="img-fluid rounded-5"
+                            loading="lazy">
+                    </div>
+                </div>
+                <div class="row mt-4  justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/lossy-page1-640px-Gilberto_Gil_nos_anos_1960.tif.jpg" class="img-fluid rounded-5"
+                            loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/lossy-page1-640px-Caetano_Veloso_no_III_Festival_da_Música_Popular.tif.jpg"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Luciano </label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">redação</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">leitura</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill"Nao envie nada
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
